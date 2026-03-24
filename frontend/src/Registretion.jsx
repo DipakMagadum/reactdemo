@@ -37,26 +37,25 @@ export function Registretion(){
   } 
     return(
       <>
-      <div className="bg-amber-100">
+      <div className="flex justify-center item-center h-screen">
       <form 
-       className="flex justify-center item-center h-screen" onSubmit={Regcall} noValidate>
-        <div className="border-3  justify-center item-center h-130 w-80 m-5 bg-gray-200 shadow-xl/50">
-            <div className=" justify-center item-center m-2 ml-10">
+       className=" flex flex-col border rounded-xl  w-90 p-7" onSubmit={Regcall} noValidate>
+    
             <h1 className="text-center text-xl " style={{fontSize:25}}><b>Registration Form</b></h1>
             <label >Name</label>
              <input className="border p-1 w-60 bg-white  " type="text" placeholder="Enter your name"onChange={(e)=>setname(e.target.value)} />
-             <p className="text-red-500">{error.name}</p>
+             <p className="text-red-500 h-5">{error.name}</p>
              <label>Last Name:</label>
             <input className="border p-1 w-60 bg-white" type="text"placeholder="Enter Last Name"onChange={(e)=>setlname(e.target.value)}/>
-            <p className="text-red-500">{error.lname}</p>
+            <p className="text-red-500 h-5">{error.lname}</p>
             <label>Email:</label>
             <input className="border p-1 w-60 bg-white"  type="email" placeholder="Enter Email" onChange={(e)=>setemail(e.target.value)}/>
-            <p className="text-red-500">{error.email}</p>
+            <p className="text-red-500 h-5">{error.email}</p>
             <label> Gender:</label>
            <input className="ml-2" type="radio" name="gender" onChange={(e)=>setgender(e.target.value)}/>Male
-                    <input className="ml-2" type="radio" name="gender" onChange={(e)=>setgender(e.target.value)}/>Female
+                    <input className=" ml-2" type="radio" name="gender" onChange={(e)=>setgender(e.target.value)}/>Female
                     <input className="ml-2" type="radio" name="gender" onChange={(e)=>setgender(e.target.value)}/>Other
-                    <p className="text-red-500">{error.gender}</p>
+                    <p className="text-red-500 h-5">{error.gender}</p>
                     <label>City:</label>
               <select className="bg-white ml-10 mt-5 h-8" onChange={(e)=>setcity(e.target.value)}>
                 <option>Select City</option>
@@ -66,10 +65,10 @@ export function Registretion(){
                     <option>Kolhapur</option>
                     <option>Belgam</option>
                 </select>
-                <p className="text-red-500">{error.city}</p>
+                <p className="text-red-500 h-5">{error.city}</p>
                 <button className="cursor-pointer border-1 shadow-xl/10 ml-18 mt-2 h-10 w-25 rounded-2xl bg-blue-100 ">Submit</button>
-                </div>
-        </div>
+                
+    
      </form>
      </div>
     </>
