@@ -36,7 +36,7 @@ export function Login (){
         {error.Username && <p style={{ color: "red"}}>{error.Username}</p>}
 
         <label>Password</label>
-        <input class="border p-1" type="text" placeholder="please enter password"
+        <input class="border p-1" type="password" placeholder="please enter password"
          value={Password}
          onChange={(e) => setPassword(e.target.value)}
         />
