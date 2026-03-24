@@ -10,7 +10,7 @@ export function Registretion(){
   function Regcall(e){
     e.preventDefault()
     let Msg={name:"",lname:"",email:"",gender:"",city:""}
-    validate=true
+   let validate=true
     if(name==""){
         Msg.name="Enter a name"
         validate=false
