@@ -1,8 +1,8 @@
 import { useState } from "react";
 export function Login (){
 
-    const [Username,setname]=useState("")
-    const [Password,setpassword]=useState("")
+    const [Username,setUsername]=useState("")
+    const [Password,setPassword]=useState("")
     const [error,seterror]=useState({Username:"",Password:""})
 
     function call(e){
@@ -11,10 +11,10 @@ export function Login (){
        let newerror = {Username:"",Password:""}
 
        if(Username==""){
-        newerror.name="please enter Username"
+        newerror.Username="please enter Username"
        }
        if(Password==""){
-        newerror.password="please enter password"
+        newerror.Password="please enter password"
        }
 
        seterror(newerror)
