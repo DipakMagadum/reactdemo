@@ -1,15 +1,16 @@
 export function Registretion(){
-    return
-    (<>
-     <form>
+    return(
+      <>
+      <form>
         <div>
-            <h1>Registretion Form</h1>
-            Name : <input type="text" placeholder="Enter your name"></input><br></br>
-            Last Name :<input type="text"placeholder="Enter Last Name"></input><br></br>
-            Email :<input type="email" placeholder="Enter Email"></input><br></br>
-            Gender :<input type="radio"value={male}>Male</input>
-                    <input type="radio" value={female}>Female</input>
-                    <input type="radio" value={other}>Other</input><br></br>
+            <h1>Registration Form</h1>
+            <label for="name">Name</label>
+             <input type="text" placeholder="Enter your name"/><br></br>
+            Last Name :<input type="text"placeholder="Enter Last Name"/><br></br>
+            Email :<input type="email" placeholder="Enter Email"/><br></br>
+            Gender :<input type="radio"/>Male
+                    <input type="radio"/>Female
+                    <input type="radio"/>Other<br></br>
              City :
              <select>
                 <option>Select City</option>
@@ -23,5 +24,5 @@ export function Registretion(){
         </div>
      </form>
     </>
-    )
+    );
 }
