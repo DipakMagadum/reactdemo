@@ -39,7 +39,8 @@ export function Registretion(){
     return(
       <>
       <div className="bg-amber-100">
-      <form  className="flex justify-center item-center h-screen" onSubmit={Regcall}>
+      <form 
+       className="flex justify-center item-center h-screen" onSubmit={Regcall} noValidate>
         <div className="border-3  justify-center item-center h-110 w-80 m-20 bg-gray-200 shadow-xl/50">
             <div className=" justify-center item-center m-10">
             <h1 className="text-center text-xl mt-10" style={{fontSize:25}}><b>Registration Form</b></h1>
