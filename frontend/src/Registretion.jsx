@@ -67,9 +67,7 @@ export function Registretion(){
                     <option>Belgam</option>
                 </select>
                 <p className="text-red-500">{error.city}</p>
-                <div className="mt-10 fixed">
                 <button className="cursor-pointer border-1 shadow-xl/10 ml-18 mt-2 h-10 w-25 rounded-2xl bg-blue-100 ">Submit</button>
-                </div>
                 </div>
         </div>
      </form>
