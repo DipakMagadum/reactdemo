@@ -1,4 +1,4 @@
-export { useState } from "react";
+import { useState } from "react";
 export function Login (){
 
     const [Username,setname]=useState("")
@@ -22,17 +22,26 @@ export function Login (){
 
     return(
         <>
-        <form>
+        <form onSubmit={call}>
 
         <h1>Login Page</h1>
 
         <label>Username</label>
-        <input type=text placeholder="please enter registered Username">
+        <input type="text" placeholder="please enter registered Username"
+          value={Username}
+          onChange={(e)=>setUsername(e.target.value)}
+        />
+        {error.Username && <p style={{ color: "red"}}>{error.Username}</p>}
 
         <label>Password</label>
-        <input type="text" placeholder="please enter password">
+        <input type="text" placeholder="please enter password"
+         value={Password}
+         onChange={(e) => setPassword(e.target.value)}
+        />
+        {error.Password && <p style={{ color: "red" }}>{error.Password}</p>}
 
-        <button>LOGIN<button>
+
+        <button type="submit">LOGIN</button>
 
         <button>Register</button>   
 
