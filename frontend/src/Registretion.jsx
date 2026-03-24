@@ -43,16 +43,16 @@ export function Registretion(){
         <div className="border-3  justify-center item-center h-130 w-80 m-5 bg-gray-200 shadow-xl/50">
             <div className=" justify-center item-center m-2 ml-10">
             <h1 className="text-center text-xl " style={{fontSize:25}}><b>Registration Form</b></h1>
-            <label >Name</label><br></br>
+            <label >Name</label>
              <input className="border p-1 w-60 bg-white  " type="text" placeholder="Enter your name"onChange={(e)=>setname(e.target.value)} />
              <p className="text-red-500">{error.name}</p>
-             <label>Last Name:</label><br></br>
+             <label>Last Name:</label>
             <input className="border p-1 w-60 bg-white" type="text"placeholder="Enter Last Name"onChange={(e)=>setlname(e.target.value)}/>
             <p className="text-red-500">{error.lname}</p>
-            <label>Email:</label><br></br>
+            <label>Email:</label>
             <input className="border p-1 w-60 bg-white"  type="email" placeholder="Enter Email" onChange={(e)=>setemail(e.target.value)}/>
             <p className="text-red-500">{error.email}</p>
-            <label> Gender:</label><br></br>
+            <label> Gender:</label>
            <input className="ml-2" type="radio" name="gender" onChange={(e)=>setgender(e.target.value)}/>Male
                     <input className="ml-2" type="radio" name="gender" onChange={(e)=>setgender(e.target.value)}/>Female
                     <input className="ml-2" type="radio" name="gender" onChange={(e)=>setgender(e.target.value)}/>Other
@@ -67,7 +67,9 @@ export function Registretion(){
                     <option>Belgam</option>
                 </select>
                 <p className="text-red-500">{error.city}</p>
+                <div className="mt-10 fixed">
                 <button className="cursor-pointer border-1 shadow-xl/10 ml-18 mt-2 h-10 w-25 rounded-2xl bg-blue-100 ">Submit</button>
+                </div>
                 </div>
         </div>
      </form>
