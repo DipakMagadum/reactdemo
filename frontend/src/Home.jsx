@@ -19,7 +19,7 @@ export function Home(){
                 </li>
 
                 <li  className="hover:bg-sky-500 p-1 rounded">
-                     <Link to="/Logout">Logout</Link>
+                     <Link to="/Registration">Registration</Link>
                 </li>
                 </div>
             </ul>
