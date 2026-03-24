@@ -22,30 +22,33 @@ export function Login (){
 
     return(
         <>
-        <form onSubmit={call}>
+        <div class="flex justify-center items-center h-screen">
+        <form class="flex flex-col shadow-xl/50 rounded w-80 p-7 gap-4 bg-gray-200"
+            onSubmit={call}> 
 
-        <h1>Login Page</h1>
+        <h1 class="text-center">Login Page</h1>
 
         <label>Username</label>
-        <input type="text" placeholder="please enter registered Username"
+        <input class="border p-1" type="text" placeholder="please enter registered Username"
           value={Username}
           onChange={(e)=>setUsername(e.target.value)}
         />
         {error.Username && <p style={{ color: "red"}}>{error.Username}</p>}
 
         <label>Password</label>
-        <input type="text" placeholder="please enter password"
+        <input class="border p-1" type="text" placeholder="please enter password"
          value={Password}
          onChange={(e) => setPassword(e.target.value)}
         />
         {error.Password && <p style={{ color: "red" }}>{error.Password}</p>}
 
 
-        <button type="submit">LOGIN</button>
+        <button class="border rounded-xl p-1 bg-orange-400" type="submit">LOGIN</button>
 
-        <button>Register</button>   
+        <button class="border rounded-xl p-1 bg-blue-300">Register</button>   
 
         </form>
+        </div>
         </>
     )
 }
