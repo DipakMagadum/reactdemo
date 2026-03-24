@@ -10,10 +10,10 @@ export function Login (){
        e.preventDefault()
        let newerror = {Username:"",Password:""}
 
-       if(Username=""){
+       if(Username==""){
         newerror.name="please enter Username"
        }
-       if(Password=""){
+       if(Password==""){
         newerror.password="please enter password"
        }
 
