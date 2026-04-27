@@ -4,7 +4,7 @@ export function Home(){
     return(
         <>
         <div >
-           <nav className="flex bg-sky-600 h-20 items-center justify-end p-5 ">
+           <nav className="flex bg-orange-600 h-20 items-center justify-end p-5 ">
              <ul>
 
                 <div className=" flex  gap-7 text-lg text-white ">
