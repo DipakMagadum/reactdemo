@@ -12,15 +12,15 @@ export function Registretion(){
     let Msg={name:"",lname:"",email:"",gender:"",city:""}
    let validate=true
     if(name==""){
-        Msg.name="Enter a name"
+        Msg.name="Enter your name"
         validate=false
     }
     if(lname==""){
-        Msg.lname="Enter last name"
+        Msg.lname="Enter  your lastname"
         validate=false
     }
     if(email==""){
-        Msg.email="Enter email"
+        Msg.email="Enter your email"
         validate=false
     } else if (!email.includes("@")){
         Msg.email="invalid email"
@@ -46,10 +46,10 @@ export function Registretion(){
              <input className="border p-1 w-60 bg-white  " type="text" placeholder="Enter your name"onChange={(e)=>setname(e.target.value)} />
              <p className="text-red-500 h-5">{error.name}</p>
              <label>Last Name:</label>
-            <input className="border p-1 w-60 bg-white" type="text"placeholder="Enter Last Name"onChange={(e)=>setlname(e.target.value)}/>
+            <input className="border p-1 w-60 bg-white" type="text"placeholder="Enter your Last Name"onChange={(e)=>setlname(e.target.value)}/>
             <p className="text-red-500 h-5">{error.lname}</p>
             <label>Email:</label>
-            <input className="border p-1 w-60 bg-white"  type="email" placeholder="Enter Email" onChange={(e)=>setemail(e.target.value)}/>
+            <input className="border p-1 w-60 bg-white"  type="email" placeholder="Enter your Email" onChange={(e)=>setemail(e.target.value)}/>
             <p className="text-red-500 h-5">{error.email}</p>
             <label> Gender:</label>
            <input className="ml-2" type="radio" name="gender" onChange={(e)=>setgender(e.target.value)}/>Male
